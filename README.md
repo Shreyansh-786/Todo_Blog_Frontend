@@ -2,7 +2,7 @@
 
 This project is part of a one-day frontend development assignment to practice building responsive, interactive web applications using **HTML**, **CSS**, and **JavaScript** — with no backend dependencies.
 
-🔗 **Live Demo**: [View on GitHub Pages](https://shreyansh-786.github.io/Todo_Blog_Frontend) *(update with actual link)*  
+🔗 **Live Demo**: [View on GitHub Pages](https://shreyansh-786.github.io/Todo_Blog_Frontend/)*  
 📁 **Repository**: [GitHub Repo](https://github.com/Shreyansh-786/Todo_Blog_Frontend)
 
 ---

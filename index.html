@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CDN (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (for calendar/clock icons, optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Todo</a> | 
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="container" id="todo-app">
+        <h1>Todo Manager</h1>
+        <!-- Todo App will be rendered here -->
+        <form id="todo-form" class="mb-3 d-flex gap-2 flex-wrap">
+            <input type="text" id="todo-input" class="form-control flex-grow-1" placeholder="Add a new task..." required>
+            <select id="todo-priority" class="form-select w-auto" aria-label="Priority">
+                <option value="normal">Normal</option>
+                <option value="high">High</option>
+                <option value="low">Low</option>
+            </select>
+            <input type="date" id="todo-due" class="form-control w-auto" placeholder="Due date" aria-label="Due date">
+            <input type="time" id="todo-time" class="form-control w-auto" placeholder="Due time" aria-label="Due time">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+        <div class="mb-3">
+            <button class="btn btn-outline-secondary btn-sm me-2" data-filter="all">All</button>
+            <button class="btn btn-outline-secondary btn-sm me-2" data-filter="pending">Pending</button>
+            <button class="btn btn-outline-secondary btn-sm" data-filter="completed">Completed</button>
+        </div>
+        <ul id="todo-list" class="list-group mb-3"></ul>
+        <div id="empty-list" class="text-muted"></div>
+    </div>
+    <script src="js/todo.js"></script>
+</body>
+</html>
